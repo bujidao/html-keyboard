@@ -128,6 +128,7 @@ class KeyBoardModule {
                     this._close();
                 }else if(value==='._@/#' || value === "ABC"){
                     this._close();
+                    this._setSwitchLetterChar()
                     this._createDiv();
                 }else if(value!=='del'){
                     this._setAddValue(input,value);
@@ -141,7 +142,6 @@ class KeyBoardModule {
     }
 
     _createDiv() {
-        this._setSwitchLetterChar()
         var _div = document.createElement('div');
         _div.id = '__b_u_j_i_d_a_o_k_b_divid';
         _div.style.position = 'fixed';
